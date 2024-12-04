@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <div class="container scroll-content">
+        <div class="registration-card">
+            <div class="brand">
+                <div class="logo">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h1>Create Account</h1>
+                <p>Join our community today</p>
+            </div>
+
+            <form id="registrationForm" class="registration-form">
+                <div class="form-steps">
+                    <div class="step active" data-step="1">Personal Info</div>
+                    <div class="step" data-step="2">Account Setup</div>
+                    <div class="step" data-step="3">Verification</div>
+                </div>
+
+                <div class="step-content active" data-step="1">
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="fullName" required placeholder="Full Name">
+                        <span class="highlight"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fas fa-calendar"></i>
+                        <input type="date" name="dob" required placeholder=" ">
+                        <label>Date of Birth</label>
+                        <span class="highlight"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" name="phone" required placeholder="Phone Number">
+                        <span class="highlight"></span>
+                    </div>
+                </div>
+
+                <div class="step-content" data-step="2">
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="email" required placeholder="Email Address">
+                        <span class="highlight"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" required placeholder="Password">
+                        <i class="fas fa-eye password-toggle"></i>
+                        <div class="password-strength"></div>
+                        <span class="highlight"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="confirmPassword" required placeholder="Confirm Password">
+                        <span class="highlight"></span>
+                    </div>
+                </div>
+
+                <div class="step-content" data-step="3">
+                    <div class="verification-section">
+                        <div class="otp-inputs">
+                            <input type="text" maxlength="1" class="otp-input" required>
+                            <input type="text" maxlength="1" class="otp-input" required>
+                            <input type="text" maxlength="1" class="otp-input" required>
+                            <input type="text" maxlength="1" class="otp-input" required>
+                        </div>
+                        <p class="otp-info">Enter the verification code sent to your email</p>
+                        <button type="button" class="resend-btn">Resend Code</button>
+                    </div>
+                </div>
+
+                <div class="form-navigation">
+                    <button type="button" class="prev-btn" disabled>Previous</button>
+                    <button type="button" class="next-btn">Next</button>
+                    <button type="submit" class="submit-btn" style="display: none;">Complete Registration</button>
+                </div>
+
+                <div class="social-login">
+                    <p>Or register with</p>
+                    <div class="social-buttons">
+                        <button type="button" class="social-btn google">
+                            <i class="fab fa-google"></i>
+                        </button>
+                        <button type="button" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button type="button" class="social-btn apple">
+                            <i class="fab fa-apple"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
